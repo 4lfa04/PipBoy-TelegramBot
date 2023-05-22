@@ -39,10 +39,10 @@ def registro(message):
     df = pd.DataFrame({'Nombres':nombres,'Numero':numeros})
     bot.send_message(message.chat.id,f"{df}")
     
-    df = pd.DataFrame({'Nombres':nombres,'Numero':numeros,'Direcciones':direcciones,'Ubicacion GPS':locations})
-    df.to_csv('informacion.csv')
-    document = open('informacion.csv')
-    bot.send_document(message.chat.id,document)
+    #df = pd.DataFrame({'Nombres':nombres,'Numero':numeros,'Direcciones':direcciones,'Ubicacion GPS':locations})
+    #df.to_csv('informacion.csv')
+    #document = open('informacion.csv')
+    #bot.send_document(message.chat.id,document)
     # print(df)
 
 # dh = pd.DataFrame([nombres,numeros,direcciones,locations])
