@@ -23,6 +23,7 @@ def registro(message):
     result = requests.get(website).text
     lista = json.loads(result)
     # print(lista['data'][0]['name'])
+    lista = ""
     lista = lista['data']
     if len(lista) > 0:
         for dato in lista:
